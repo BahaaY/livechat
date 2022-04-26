@@ -1,0 +1,218 @@
+/*navbar users*/
+
+.wrapper .bar {
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    position: relative;
+    top: 18px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar .chat,
+.bar .people {
+    margin-top: -5px;
+    height: 27px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.bar .chat {
+    background-color: green;
+    border-radius: 50px 50px 1px 1px;
+}
+
+.bar .people {
+    background-color: rgb(245, 245, 245);
+    border-radius: 1px 1px 50px 50px;
+}
+
+.sidenav,
+.sidenavpeople {
+    margin-top: -7px;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    overflow-y: hidden;
+    padding-top: 60px;
+    transition: 0.3s;
+}
+
+.sidenav {
+    border-top: 2px solid black;
+    top: 95px;
+    left: 0;
+    height: 470px;
+    width: 100%;
+}
+
+.sidenavpeople {
+    height: 0px;
+    width: 50%;
+    top: 34px;
+    right: 0;
+}
+
+.closebtnchat,
+.closebtnpeople {
+    color: green;
+}
+
+.wrapper .ChatPeople {
+    position: absolute;
+    top: 240px;
+    font-weight: bold;
+    font-size: 45px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.spanchat,
+.spanpeople {
+    color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*navbar for Emoji*/
+
+.ListEmoji {
+    position: relative;
+    bottom: 10px;
+    left: 15px;
+    width: 0px;
+    height: 0px;
+    border-radius: 10px;
+    transition: 0.3s;
+    overflow-x: hidden;
+    padding-top: 5px;
+}
+
+.far {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+.EmojiAnimal,
+.EmojiObject,
+.EmojiPeople,
+.EmojiDrink,
+.EmojiCar {
+    position: relative;
+    padding-top: 5px;
+    width: 0px;
+    height: 0px;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.2s;
+}
+
+.allHeader {
+    width: 92%;
+    margin-top: -13px;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.allHeader .peopleEmoji,
+.allHeader .animalEmoji,
+.allHeader .drinkEmoji,
+.allHeader .carEmoji,
+.allHeader .objectEmoji {
+    margin-top: -13px;
+    padding-top: 2px;
+    padding-left: 20px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    background-color: white;
+}
+
+.allHeader .peopleEmoji,
+.allHeader .animalEmoji,
+.allHeader .drinkEmoji {
+    border-right: 1px solid black;
+}
+
+.allHeader .objectEmoji {
+    border-left: 1px solid black;
+}
+
+.fa-smile,
+.fa-window-close {
+    position: relative;
+    right: 13px;
+    padding-top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.fa-window-close {
+    display: none;
+}
+
+
+/*for send image*/
+
+.del {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    display: none;
+}
+
+.del .yes,
+.del .no {
+    margin-top: 0px;
+    height: 50px;
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.del .no {
+    padding-top: 10px;
+}
+
+.del .ask {
+    color: green;
+}
+
+
+/*for scroll*/
+
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    border: 7px solid #232943;
+    box-shadow: inset 0 0 2.5px 2px rgba(87, 87, 87, 0.014);
+    border-radius: 50px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: linear-gradient( 45deg, #06dee1, #79ff6c);
+    border-radius: 50px;
+}

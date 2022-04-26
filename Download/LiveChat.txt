@@ -1,0 +1,2 @@
+LiveChat a program developed by B.Y, is dedicated to chatting and meeting new people, by register via e-mail.
+LiveChat is still under development, soon it will be on  PlayStore and AppStore.
